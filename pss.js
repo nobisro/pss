@@ -25,22 +25,31 @@ function gamePlay(playerSelect, computerSelect) {
     
     if (playerSelection == "paper" && computerSelect == "paper") {
         console.log("It's a tie!");
+        return "tie";
     } else if (playerSelection == "paper" && computerSelect == "scissors") {
         console.log("You lose!");
+        return "lose";
     } else if (playerSelection == "paper" && computerSelect == "stone") {
         console.log("You win!");
+        return "win";
     } else if (playerSelection == "scissors" && computerSelect == "scissors") {
         console.log("It's a tie!");
+        return "tie";
     } else if (playerSelection == "scissors" && computerSelect == "stone") {
         console.log("You lose!");
+        return "lose";
     } else if (playerSelection == "scissors" && computerSelect == "paper") {
         console.log("You win!");
+        return "win";
     } else if (playerSelection == "stone" && computerSelect == "stone") {
         console.log("It's a tie!");
+        return "tie";
     } else if (playerSelection == "stone" && computerSelect == "paper") {
         console.log("You lose!");
+        return "lose";
     } else if (playerSelection == "stone" && computerSelect == "scissors") {
         console.log("You win!");
+        return "win";
         
 }
 }
