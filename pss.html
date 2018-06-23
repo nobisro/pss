@@ -3,12 +3,104 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>PSS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="pss.js"></script>
+    <!-- <script src="pss.js"> -->
+
+    <!-- </script> -->
+ 
+    
 </head>
 <body>
+    <script>
+        
+/*
+ //Beginning of JavaScript//
+
+
+
+// User chooses paper, scissors, or stone. Checks that only valid choices count
+let playerSelection;
+let guessTotal = 0;
+function playerSelectionFunction() {
+    playerSelection = prompt('paper, scissors, stone!').toLowerCase();
+    console.log('You choose ' + playerSelection);
+    // if (playerSelection !== 'paper' || 'scissors' || 'stone') {
+    //     alert('Remember, paper, scissors, or stone only!');
+    //     playerSelection = prompt('paper, scissors, stone!').toLowerCase();
+    // }
+    return playerSelection;
+}
+
+//Computer randomly chooses between paper, scissors, stone
+let randomNum;
+function computerPlay() {
+    randomNum = Math.ceil(Math.random() * 3)
+    if (randomNum == 1 ) {
+        console.log("Computer chooses paper");
+        return 'paper';
+    } 
+    else if (randomNum == 2 ) {
+        console.log("Computer chooses scissors");
+        return 'scissors';
+    } else {
+        console.log("Computer chooses stone");
+        return 'stone';
+    }
+}
+
+//Computes the winner of the game
+function game(playerSelect, computerSelect) {
+
+    playerSelectionFunction();
     
+    if (playerSelection == "paper" && computerSelect == "paper") {
+        console.log("It's a tie!");
+        return "tie";
+    } else if (playerSelection == "paper" && computerSelect == "scissors") {
+        console.log("You lose!");
+        return "lose";
+    } else if (playerSelection == "paper" && computerSelect == "stone") {
+        console.log("You win!");
+        return "win";
+    } else if (playerSelection == "scissors" && computerSelect == "scissors") {
+        console.log("It's a tie!");
+        return "tie";
+    } else if (playerSelection == "scissors" && computerSelect == "stone") {
+        console.log("You lose!");
+        return "lose";
+    } else if (playerSelection == "scissors" && computerSelect == "paper") {
+        console.log("You win!");
+        return "win";
+    } else if (playerSelection == "stone" && computerSelect == "stone") {
+        console.log("It's a tie!");
+        return "tie";
+    } else if (playerSelection == "stone" && computerSelect == "paper") {
+        console.log("You lose!");
+        return "lose";
+    } else if (playerSelection == "stone" && computerSelect == "scissors") {
+        console.log("You win!");
+        return "win";
+        
+}
+}
+
+//To run the game
+function play() {
+    for (let i = 0; i < 5; i++) {
+        game(playerSelection, computerPlay());
+    }
+}
+
+//Actually runs the game
+play();
+        
+        
+        
+         */
+    // </script>
+
 </body>
 </html>
