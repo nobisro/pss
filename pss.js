@@ -17,21 +17,28 @@ let rounds = 5;
  }
 //  Human inputs move
 function humanPlay() {
-    playerPlay = prompt('paper, scissors, stone!');
-    playerPlay = playerPlay.toString();
-    playerPlay = playerPlay.toLowerCase();
-    console.log(playerPlay);
-
-    if (playerPlay == 'paper' || playerPlay == 'scissors' || playerPlay == 'stone') {
-        // alert('OK!!'); 
-    }
-    else if (playerPlay != 'paper' || playerPlay != 'scissors' || playerPlay != 'stone') {
-            playerPlay = prompt('Try again! paper, scissors, stone!');
-            playerPlay = playerPlay.toString();
-            playerPlay = playerPlay.toLowerCase();
+let playerPlay;
+let validityCheck;
+    do {
+        if (typeof playerPlay === "undefined") {
+            playerPlay = prompt('paper, scissors, stone!');
+        } else {  playerPlay = prompt('Only paper, scissors, stone please!!');
+    }  
+        playerPlay = playerPlay.toLowerCase();
+        if (playerPlay === 'paper') {
+            validityCheck = 1;
+        } else if (playerPlay === 'scissors') {
+            validityCheck = 1;
+        } else if (playerPlay === 'stone') {
+            validityCheck = 1;
+        } else {
+            validityCheck = 0;
         }
-        return playerPlay;
-    }
+    }  while (validityCheck !== 1); 
+    return playerPlay;
+}
+
+
 function humanWin() {
     userWins++;
     console.log(userWins);
