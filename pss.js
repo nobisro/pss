@@ -17,8 +17,8 @@ let rounds = 5;
  }
 //  Human inputs move
 function humanPlay() {
-let playerPlay;
-let validityCheck;
+    let playerPlay;
+    let validityCheck;
     do {
         if (typeof playerPlay === "undefined") {
             playerPlay = prompt('paper, scissors, stone!');
@@ -92,11 +92,9 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-function game() {
+function playGame() {
     for (let i = 0; i < rounds; i++) {
-        let humanSelect = humanPlay();
-        let computerSelect = computerPlay();
-        let game = playRound(humanSelect, computerSelect);
+        let game = playRound(humanPlay(), computerPlay());
         console.log('Round ' + (i+1) + ': ' + game);
     }
 
@@ -111,4 +109,4 @@ function game() {
     }
 }
 
-game();
+playGame();
