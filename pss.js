@@ -25,17 +25,24 @@ function humanPlay() {
         } else {  playerPlay = prompt('Only paper, scissors, stone please!!');
     }  
         playerPlay = playerPlay.toLowerCase();
-        if (playerPlay === 'paper') {
+
+    switch (playerPlay) {
+        case 'paper':
             validityCheck = 1;
-        } else if (playerPlay === 'scissors') {
+            break;
+        case 'scissors':
             validityCheck = 1;
-        } else if (playerPlay === 'stone') {
+            break;
+        case 'stone':
             validityCheck = 1;
-        } else {
+            break;
+        default:
             validityCheck = 0;
+            break;
         }
-    }  while (validityCheck !== 1); 
-    return playerPlay;
+    } 
+    while (validityCheck !== 1); 
+        return playerPlay;
 }
 
 
